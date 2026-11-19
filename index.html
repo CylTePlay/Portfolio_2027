@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cyl - Portfolio</title>
+    <meta property="og:type" content="website"/>
+    <link rel="icon" type="image/png" href="______"/>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<header> 
+    <div class="inner">
+        <div class="nom">
+                <h3>Cylian Guibert</h3>
+        </div>
+            <nav>
+                <li><h3><a href="https://www.instagram.com/cyl_guibert/">Instagram</a></span></h3></li>
+                <li><h3><a href="https://letterboxd.com/CylTePlay/">Letterboxd</a></span></h3></li>
+                <li><h3><a href="about.html">About</a></span></h3></li>
+            </nav>
+        </div>
+    </header>
+
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const triggers = document.querySelectorAll('[id$="_txt"]');
+
+            triggers.forEach(function (trigger) {
+                const base = trigger.id.slice(0, -4);
+                const imageContainer = document.getElementById(base + "_img");
+                console.log(triggers);
+                console.log(base);
+                console.log(imageContainer);
+
+                if (!imageContainer) return;
+
+                trigger.addEventListener('pointerenter', function () {
+                    imageContainer.classList.add('is-visible');
+                });
+
+                trigger.addEventListener('pointerleave', function () {
+                    imageContainer.classList.remove('is-visible');
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const triggers = document.querySelectorAll('[id$="_txt"]');
+
+            triggers.forEach(function (trigger) {
+                const base = trigger.id.slice(0, -4);
+                const imageContainer = document.getElementById(base + "_infos");
+                console.log(triggers);
+                console.log(base);
+                console.log(imageContainer);
+
+                if (!imageContainer) return;
+
+                trigger.addEventListener('pointerenter', function () {
+                    imageContainer.classList.add('is-visible');
+                });
+
+                trigger.addEventListener('pointerleave', function () {
+                    imageContainer.classList.remove('is-visible');
+                });
+            });
+        });
+    </script>
+
+    <container> 
+            <img loading="lazy" decoding="async" width= 100% height= 100% src="assets/sncf/sncf_cover.png" class="sncf_img" id="sncf_img" alt="" />
+    </container>
+    <container> 
+            <img loading="lazy" decoding="async" width= 60% height= 60% src="assets/noise/noise_cover.jpg" class="noise_img" id="noise_img" alt="" />
+    </container>
+    <container> 
+            <img loading="lazy" decoding="async" width= 60% height= 60% src="assets/peeter/peeter_cover.png" class="peeter_img" id="peeter_img" alt="" />
+    </container> 
+    <container> 
+            <img loading="lazy" decoding="async" width= 75% height= 75% src="assets/voyage/voyage_cover.JPG" class="voyage_img" id="voyage_img" alt="" />
+    </container>
+    <container> 
+            <img loading="lazy" decoding="async" width= 75% height= 75% src="assets/uconnvstennessee/uconnvstennessee_cover.png" class="uconnvstennessee_img" id="uconnvstennessee_img" alt="" />
+    </container>
+    <container> 
+            <img loading="lazy" decoding="async" width= 75% height= 75% src="assets/cinedna/cinedna_cover.jpg" class="cinedna_img" id="cinedna_img" alt="" />
+    </container>
+    <container>
+            <img loading="lazy" decoding="async" width= 50% height= 50% src="assets/mediasso/mediasso_cover.jpg" class="mediasso_img" id="mediasso_img" alt="" />
+    </container>
+    <container> 
+            <img loading="lazy" decoding="async" width= 90% height= 90% src="assets/lemontagnard/lemontagnard_cover.png" class="lemontagnard_img" id="lemontagnard_img" alt="" />
+    </container>
+    <container>
+            <img loading="lazy" decoding="async" width= 60% height= 60% src="assets/hipopsession/hipopsession_cover.png" class="hipopsession_img" id="hipopsession_img" alt="" />
+    </container>
+    <container> 
+            <img loading="lazy" decoding="async" width= 75% height= 75% src="assets/contreplongee/contreplongee_cover.jpg" class="contreplongee_img" id="contreplongee_img" alt="" />
+    </container>
+
+
+    <section> 
+        <div> 
+            <h2><a class="sncf_txt" id="sncf_txt" href="sncf.html">SNCF</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="contreplongee_txt" id="contreplongee_txt" href="contreplongee.html">Contre-Plongée</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="uconnvstennessee_txt" id="uconnvstennessee_txt" href="uconnvstennessee.html">Uconn VS Tennessee</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="lemontagnard_txt" id="lemontagnard_txt" href="lemontagnard.html">Le Montagnard</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="noise_txt" id="noise_txt" href="noise.html">Noise</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="mediasso_txt" id="mediasso_txt" href="mediasso.html">Médiasso</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="voyage_txt" id="voyage_txt" href="voyage.html">Voyage en orbite</a></h2>
+        </div>
+        <div> 
+            <h2><a class="hipopsession_txt" id="hipopsession_txt"  href="hipopsession.html">Hip Opsession</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="cinedna_txt" id="cinedna_txt" href="cinedna.html">Cinedna</a></h2>    
+        </div>
+        <div> 
+            <h2><a class="peeter_txt" id="peeter_txt" href="peeter.html">Peeter</a></h2>    
+        </div>
+        
+    </section>
+    </div>
+
+    <footer>
+        <a href="bonus.html" class="bonus_txt">bonus à découvrir : clique ici 😉</a>
+        <a>un portfolio concocté (et codé) maison !</a>
+    </footer>
+
+</body>

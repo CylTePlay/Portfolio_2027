@@ -1,0 +1,232 @@
+header{
+    width: 100vw;
+    height: 50px;
+    margin:0vh;
+    padding:2vh;
+    align-self: left;
+    display: grid;
+    flex-direction: row;
+    position: fixed;
+    mix-blend-mode: difference;
+}
+
+.inner{
+    width: 100vw; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0;
+}
+
+.nom{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+.nom div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header a{
+    color: #2089e5;
+    text-decoration: none;
+    transition: color 100ms ease;
+}
+
+header nav a:hover{
+    color: #c6d6f7;
+}
+
+h3{
+	color: #2089e5;
+	font-family: "Redaction 50", Helvetica, sans-serif;
+	font-weight: lighter;
+    text-align: left;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    text-transform: uppercase;
+}
+
+body{
+    display : flex;
+    flex-direction: column;
+    margin: 0px;
+    place-items: center;
+    overflow: hidden;
+}
+    
+section a{
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover{
+    color: #c6d6f7;
+    mix-blend-mode: difference;
+}
+
+
+h2{
+	font-family: "Redaction 70", Helvetica, sans-serif;
+    margin: 0;
+    font-size: 34px;
+	text-align: center;
+	font-weight: lighter;
+    text-decoration : none;
+    text-transform: uppercase;
+}
+
+section{
+    position: absolute;
+    display: flex;
+    top: 35vh;
+    bottom: 0vh;
+    flex-direction: column;
+}
+
+container{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-height: 50vh;
+    max-width: 70vw;
+    place-items: center;    
+    margin: auto;
+}
+
+
+.images{
+    margin: 100px 0 150px 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+
+}
+
+.images2{
+    padding: 100px 2vh 150px 2vh;
+    /* display: table;
+    table-layout : auto;
+    border-collapse: separate; */
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 80px;
+}
+
+
+._img1{
+    max-height: 67vh;
+    margin: 10px;
+    place-self: center;
+    position: flex; 
+    animation: opacite 0.4s ease-in-out;
+  
+}
+
+@keyframes opacite{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+._img2{
+    height: 45vh;
+    margin: 0;
+    place-self: center;
+}
+
+._img3{
+    height: 32vh;
+    margin: 0;
+    place-self: center;
+}
+
+.is-visible{
+    opacity:1;
+    visibility:visible;
+    transition:opacity 0.5s ease;
+}
+
+
+footer{
+    width: 100vw;
+    height: auto;
+    margin-bottom:0vh;
+    bottom: 2vh;
+    place-self: bottom;
+    display: grid;
+    grid-row: span 2;
+    flex-direction: row;
+    position: fixed;
+    /* mix-blend-mode: difference; */
+
+}
+
+.infos{
+    width: 100vw;
+}
+
+.lemontagnard2_infos{
+    display: flex;
+    max-width: 50vw;
+    place-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lemontagnard_infos{
+    background-color: white;
+    border-color: #2089e5;
+    border-width: 2.5px;
+    border-style: solid;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: auto;
+    margin-top: auto;
+    display: flex;
+    align-self: middle;
+}
+
+p{
+    justify-content: middle;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    text-align: justify;
+    text-align-last: center;
+    color: #2089e5;
+	font-family: "Redaction 10", Helvetica, sans-serif;
+	font-weight: lighter;
+}
+
+
